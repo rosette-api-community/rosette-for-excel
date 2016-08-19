@@ -4,7 +4,7 @@
       xsi:schemaLocation="http://www.nlog-project.org/schemas/NLog.xsd NLog.xsd"
       autoReload="true"
       throwExceptions="true"
-      internalLogLevel="Trace" internalLogFile="c:\temp\nlog-internal.log" >
+      internalLogLevel="Debug" internalLogFile="c:\temp\nlog-internal.log" >
 
 
   <!-- optional, add some variabeles
@@ -41,7 +41,7 @@
 
   <rules>
     <!-- add your logging rules here -->
-    <logger name="*" minlevel="Trace" writeTo="log"/>
+    <logger name="*" minlevel="Debug" writeTo="log"/>
     <!--
     Write all events with minimal level of Debug (So Debug, Info, Warn, Error and Fatal, but not Trace)  to "f"
     <logger name="*" minlevel="Debug" writeTo="f" />

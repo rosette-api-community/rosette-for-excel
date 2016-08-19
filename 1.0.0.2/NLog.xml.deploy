@@ -2673,6 +2673,8 @@
              <summary>
              A class for configuring NLog through an XML configuration file 
              (App.config style or App.nlog style).
+             
+             Parsing of the XML file is also implemented in this class.
              </summary>
             <remarks>This class is thread-safe.<c>.ToList()</c> is used for that purpose.</remarks>
         </member>
@@ -2763,6 +2765,23 @@
             Re-reads the original configuration file and returns the new <see cref="T:NLog.Config.LoggingConfiguration"/> object.
             </summary>
             <returns>The new <see cref="T:NLog.Config.XmlLoggingConfiguration"/> object.</returns>
+        </member>
+        <member name="M:NLog.Config.XmlLoggingConfiguration.GetCandidateConfigFilePaths">
+            <summary>
+            Get file paths (including filename) for the possible NLog config files. 
+            </summary>
+            <returns>The filepaths to the possible config file</returns>
+        </member>
+        <member name="M:NLog.Config.XmlLoggingConfiguration.SetCandidateConfigFilePaths(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Overwrite the paths (including filename) for the possible NLog config files.
+            </summary>
+            <param name="filePaths">The filepaths to the possible config file</param>
+        </member>
+        <member name="M:NLog.Config.XmlLoggingConfiguration.ResetCandidateConfigFilePath">
+            <summary>
+            Clear the candidate file paths and return to the defaults.
+            </summary>
         </member>
         <member name="M:NLog.Config.XmlLoggingConfiguration.CleanSpaces(System.String)">
             <summary>
@@ -3475,6 +3494,12 @@
             </summary>
             <param name="item">Item name.</param>
             <returns>The item value, if defined; otherwise <c>null</c>.</returns>
+        </member>
+        <member name="M:NLog.GlobalDiagnosticsContext.GetNames">
+            <summary>
+            Returns all item names
+            </summary>
+            <returns>A collection of the names of all items in the Global Diagnostics Context.</returns>
         </member>
         <member name="M:NLog.GlobalDiagnosticsContext.Contains(System.String)">
             <summary>
@@ -7325,6 +7350,10 @@
             <summary>
             Supports mocking of SMTP Client code.
             </summary>
+            <remarks>
+            Disabled Error CS0618  'SmtpClient' is obsolete: 'SmtpClient and its network of types are poorly designed,
+             we strongly recommend you use https://github.com/jstedfast/MailKit and https://github.com/jstedfast/MimeKit instead'	
+            </remarks>
         </member>
         <member name="T:NLog.Internal.NetworkSenders.HttpNetworkSender">
             <summary>
@@ -8262,6 +8291,25 @@
             </summary>
             <param name="disposing">True to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
         </member>
+        <member name="M:NLog.LayoutRenderers.LayoutRenderer.GetFormatProvider(NLog.LogEventInfo,System.IFormatProvider)">
+            <summary>
+            Get the <see cref="T:System.IFormatProvider"/> for rendering the messages to a <see cref="T:System.String"/>
+            </summary>
+            <param name="logEvent">LogEvent with culture</param>
+            <param name="layoutCulture">Culture in on Layout level</param>
+            <returns></returns>
+        </member>
+        <member name="M:NLog.LayoutRenderers.LayoutRenderer.GetCulture(NLog.LogEventInfo,System.Globalization.CultureInfo)">
+            <summary>
+            Get the <see cref="T:System.Globalization.CultureInfo"/> for rendering the messages to a <see cref="T:System.String"/>, needed for date and number formats
+            </summary>
+            <param name="logEvent">LogEvent with culture</param>
+            <param name="layoutCulture">Culture in on Layout level</param>
+            <returns></returns>
+            <remarks>
+            <see cref="M:NLog.LayoutRenderers.LayoutRenderer.GetFormatProvider(NLog.LogEventInfo,System.IFormatProvider)"/> is preferred
+            </remarks>
+        </member>
         <member name="P:NLog.LayoutRenderers.LayoutRenderer.LoggingConfiguration">
             <summary>
             Gets the logging configuration this target is part of.
@@ -8445,6 +8493,7 @@
             <summary>
             Assembly version.
             </summary>
+            <remarks>The entry assembly can't be found in some cases e.g. ASP.NET, Unit tests etc.</remarks>
         </member>
         <member name="M:NLog.LayoutRenderers.AssemblyVersionLayoutRenderer.Append(System.Text.StringBuilder,NLog.LogEventInfo)">
             <summary>
@@ -8452,6 +8501,11 @@
             </summary>
             <param name="builder">The <see cref="T:System.Text.StringBuilder"/> to append the rendered data to.</param>
             <param name="logEvent">Logging event.</param>
+        </member>
+        <member name="P:NLog.LayoutRenderers.AssemblyVersionLayoutRenderer.Name">
+            <summary>
+            The (full) name of the assembly. If <c>null</c>, using the entry assembly.
+            </summary>
         </member>
         <member name="T:NLog.LayoutRenderers.BaseDirLayoutRenderer">
             <summary>
@@ -9674,12 +9728,13 @@
             <param name="builder">The <see cref="T:System.Text.StringBuilder"/> to append the rendered data to.</param>
             <param name="logEvent">Logging event.</param>
         </member>
-        <member name="M:NLog.LayoutRenderers.ProcessTimeLayoutRenderer.WritetTimestamp(System.Text.StringBuilder,System.TimeSpan)">
+        <member name="M:NLog.LayoutRenderers.ProcessTimeLayoutRenderer.WritetTimestamp(System.Text.StringBuilder,System.TimeSpan,System.Globalization.CultureInfo)">
             <summary>
             Write timestamp to builder with format hh:mm:ss:fff
             </summary>
             <param name="builder"></param>
             <param name="ts"></param>
+            <param name="culture"></param>
         </member>
         <member name="T:NLog.LayoutRenderers.QueryPerformanceCounterLayoutRenderer">
             <summary>
@@ -10648,9 +10703,14 @@
         </member>
         <member name="P:NLog.LayoutRenderers.Wrappers.WhenLayoutRendererWrapper.When">
             <summary>
-            Gets or sets the condition that must be met for the inner layout to be printed.
+            Gets or sets the condition that must be met for the <see cref="P:NLog.LayoutRenderers.Wrappers.WrapperLayoutRendererBase.Inner"/> layout to be printed.
             </summary>
             <docgen category="Transformation Options" order="10"/>
+        </member>
+        <member name="P:NLog.LayoutRenderers.Wrappers.WhenLayoutRendererWrapper.Else">
+            <summary>
+            If <see cref="P:NLog.LayoutRenderers.Wrappers.WhenLayoutRendererWrapper.When"/> is not met, print this layout.
+            </summary>
         </member>
         <member name="T:NLog.LayoutRenderers.Wrappers.WrapLineLayoutRendererWrapper">
             <summary>
@@ -10774,6 +10834,7 @@
             <summary>
             A specialized layout that renders CSV-formatted events.
             </summary>
+            <remarks>If <see cref="P:NLog.Layouts.LayoutWithHeaderAndFooter.Header"/> is set, then the header generation with columnnames will be disabled.</remarks>
         </member>
         <member name="T:NLog.Layouts.LayoutWithHeaderAndFooter">
             <summary>
@@ -10935,6 +10996,12 @@
             <param name="logEvent">The log event to be formatted.</param>
             <returns>A string representation of the log event.</returns>
         </member>
+        <member name="M:NLog.Layouts.CsvLayout.GetHeader">
+            <summary>
+            Get the headers with the column names.
+            </summary>
+            <returns></returns>
+        </member>
         <member name="P:NLog.Layouts.CsvLayout.Columns">
             <summary>
             Gets the array of parameters to be passed.
@@ -10974,7 +11041,7 @@
         </member>
         <member name="T:NLog.Layouts.CsvLayout.CsvHeaderLayout">
             <summary>
-            Header for CSV layout.
+            Header with column names for CSV layout.
             </summary>
         </member>
         <member name="M:NLog.Layouts.CsvLayout.CsvHeaderLayout.#ctor(NLog.Layouts.CsvLayout)">
@@ -11079,6 +11146,11 @@
             Gets or sets the option to suppress the extra spaces in the output json
             </summary>
         </member>
+        <member name="P:NLog.Layouts.JsonLayout.RenderEmptyObject">
+            <summary>
+            Gets or sets the option to render the empty object value {}
+            </summary>
+        </member>
         <member name="T:NLog.Layouts.LayoutAttribute">
             <summary>
             Marks class as a layout renderer and assigns a format string to it.
@@ -11119,6 +11191,39 @@
             <summary>
             Gets the <see cref="T:NLog.LayoutRenderers.Log4JXmlEventLayoutRenderer"/> instance that renders log events.
             </summary>
+        </member>
+        <member name="T:NLog.Layouts.CompoundLayout">
+            <summary>
+            A layout containing one or more nested layouts.
+            </summary>
+        </member>
+        <member name="M:NLog.Layouts.CompoundLayout.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NLog.Layouts.CompoundLayout"/> class.
+            </summary>
+        </member>
+        <member name="M:NLog.Layouts.CompoundLayout.InitializeLayout">
+            <summary>
+            Initializes the layout.
+            </summary>
+        </member>
+        <member name="M:NLog.Layouts.CompoundLayout.GetFormattedMessage(NLog.LogEventInfo)">
+            <summary>
+            Formats the log event relying on inner layouts.
+            </summary>
+            <param name="logEvent">The log event to be formatted.</param>
+            <returns>A string representation of the log event.</returns>
+        </member>
+        <member name="M:NLog.Layouts.CompoundLayout.CloseLayout">
+            <summary>
+            Closes the layout.
+            </summary>
+        </member>
+        <member name="P:NLog.Layouts.CompoundLayout.Layouts">
+            <summary>
+            Gets the inner layouts.
+            </summary>
+            <docgen category='CSV Options' order='10' />
         </member>
         <member name="T:NLog.Layouts.SimpleLayout">
             <summary>
@@ -11460,6 +11565,12 @@
             Creates and manages instances of <see cref="T:NLog.Logger" /> objects.
             </summary>
         </member>
+        <member name="F:NLog.LogFactory.candidateConfigFilePaths">
+            <summary>
+            Overwrite possible file paths (including filename) for possible NLog config files. 
+            When this property is <c>null</c>, the default file paths (<see cref="M:NLog.LogFactory.GetCandidateConfigFilePaths"/> are used.
+            </summary>
+        </member>
         <member name="M:NLog.LogFactory.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:NLog.LogFactory"/> class.
@@ -11640,6 +11751,28 @@
             </summary>
             <param name="disposing"><c>True</c> to release both managed and unmanaged resources;
             <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:NLog.LogFactory.GetCandidateConfigFilePaths">
+            <summary>
+            Get file paths (including filename) for the possible NLog config files. 
+            </summary>
+            <returns>The filepaths to the possible config file</returns>
+        </member>
+        <member name="M:NLog.LogFactory.SetCandidateConfigFilePaths(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Overwrite the paths (including filename) for the possible NLog config files.
+            </summary>
+            <param name="filePaths">The filepaths to the possible config file</param>
+        </member>
+        <member name="M:NLog.LogFactory.ResetCandidateConfigFilePath">
+            <summary>
+            Clear the candidate file paths and return to the defaults.
+            </summary>
+        </member>
+        <member name="M:NLog.LogFactory.GetDefaultCandidateConfigFilePaths">
+            <summary>
+            Get default file paths (including filename) for possible NLog config files. 
+            </summary>
         </member>
         <member name="F:NLog.LogFactory.IsDisposing">
             <summary>
@@ -16555,6 +16688,12 @@
             <param name="item">Item name.</param>
             <returns>The value of <paramref name="item"/>, if defined; otherwise <c>null</c>.</returns>
         </member>
+        <member name="M:NLog.MappedDiagnosticsContext.GetNames">
+            <summary>
+            Returns all item names
+            </summary>
+            <returns>A set of the names of all items in current thread-MDC.</returns>
+        </member>
         <member name="M:NLog.MappedDiagnosticsContext.Contains(System.String)">
             <summary>
             Checks whether the specified item exists in current thread MDC.
@@ -16621,6 +16760,12 @@
             </summary>
             <param name="item">Item name.</param>
             <param name="value">Item value.</param>
+        </member>
+        <member name="M:NLog.MappedDiagnosticsLogicalContext.GetNames">
+            <summary>
+            Returns all item names
+            </summary>
+            <returns>A collection of the names of all items in current logical context.</returns>
         </member>
         <member name="M:NLog.MappedDiagnosticsLogicalContext.Contains(System.String)">
             <summary>

@@ -55,7 +55,7 @@
             <setting name="EndpointToggle_NameTranslation" serializeAs="String">
                 <value>False</value>
             </setting>
-            <setting name="Output_Address_WithHyperlinks" serializeAs="String">
+            <setting name="HyperlinksAllRows" serializeAs="String">
                 <value>True</value>
             </setting>
             <setting name="Output_Address_WithoutHyperlinks" serializeAs="String">
@@ -64,13 +64,10 @@
             <setting name="Output_Address_DontInclude" serializeAs="String">
                 <value>False</value>
             </setting>
-            <setting name="Output_InputData_JustFirstRow" serializeAs="String">
-                <value>True</value>
-            </setting>
-            <setting name="Output_InputData_AllRows" serializeAs="String">
+            <setting name="Output_Address_HyperlinksJustFirstRow" serializeAs="String">
                 <value>False</value>
             </setting>
-            <setting name="Output_InputData_DontInclude" serializeAs="String">
+            <setting name="Output_InputData_AllRows" serializeAs="String">
                 <value>False</value>
             </setting>
             <setting name="ProseEndpointsEnabled" serializeAs="String">
@@ -91,22 +88,8 @@
             <setting name="EndpointToggle_Tokenize" serializeAs="String">
                 <value>False</value>
             </setting>
-            <setting name="WhichMorphology" serializeAs="Xml">
-                <value>
-                    <ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                        xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
-                </value>
-            </setting>
             <setting name="EntitiesLinked" serializeAs="String">
-                <value>False</value>
-            </setting>
-            <setting name="WhichSentiments" serializeAs="Xml">
-                <value>
-                    <ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-                        <anyType />
-                    </ArrayOfAnyType>
-                </value>
+                <value>True</value>
             </setting>
             <setting name="DocumentLang" serializeAs="String">
                 <value />
@@ -116,6 +99,24 @@
             </setting>
             <setting name="ALTURL" serializeAs="String">
                 <value />
+            </setting>
+            <setting name="WhichMorphology" serializeAs="Xml">
+                <value>
+                    <ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+                </value>
+            </setting>
+            <setting name="WhichSentiments" serializeAs="Xml">
+                <value>
+                    <ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <anyType />
+                    </ArrayOfAnyType>
+                </value>
+            </setting>
+            <setting name="ColoredSentiment" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="Output_InputData_JustFirstRow" serializeAs="String">
+                <value>True</value>
             </setting>
         </Rosette.Properties.Settings>
         <Rosette.RosetteSettings>

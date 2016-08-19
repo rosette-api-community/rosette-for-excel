@@ -142,7 +142,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BnCjUsg32L3HjQBGVCBRO+lXsnA=</dsig:DigestValue>
+        <dsig:DigestValue>kqosV2KglV1clCHe8gLbwRxRh98=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -159,26 +159,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NLog.dll" size="529408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NLog.dll" size="532480">
       <assemblyIdentity name="NLog" version="4.0.0.0" publicKeyToken="5120E14C03D0593C" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YiOSBSaYLaWak8yy1zPpvbsa+68=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NuGet.Core.dll" size="548528">
-      <assemblyIdentity name="NuGet.Core" version="2.11.1.812" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>DG2tgjcb1WOJjyDVc7D7546rvAY=</dsig:DigestValue>
+        <dsig:DigestValue>j9dwSZ+Nv0bRkZIfEx1Lq3VkSVI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -219,26 +207,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rosette.dll" size="6902272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rosette.dll" size="6952448">
       <assemblyIdentity name="Rosette" version="1.0.0.2" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8yib2MlDlGAFWzZoIJx1WwU6YRY=</dsig:DigestValue>
+        <dsig:DigestValue>sLhW9cvqqEjcHu3DOlNFjqJ0lTQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="rosette_api.dll" size="26112">
-      <assemblyIdentity name="rosette_api" version="1.1.2.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="rosette_api.dll" size="27136">
+      <assemblyIdentity name="rosette_api" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rBmh5SjWMQOk0AvsDhPZaHpGlq8=</dsig:DigestValue>
+        <dsig:DigestValue>6UwzhIBnVvmpcIc4rmb4Q5UK7Vo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -303,14 +291,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Http.Formatting.dll" size="185544">
-      <assemblyIdentity name="System.Net.Http.Formatting" version="5.2.3.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Http.Formatting.dll" size="168616">
+      <assemblyIdentity name="System.Net.Http.Formatting" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pWFlN8pOStXrC+tIhjrmXp6pEIA=</dsig:DigestValue>
+        <dsig:DigestValue>aj00munBHuGTS++gjrG+32YPC7g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -482,7 +470,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>wwlaZ3fuThdoaIFO91+cRRavBKE=</dsig:DigestValue>
+      <dsig:DigestValue>5HD1fQzGHZu+5aIWbaR3C5dGwsg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Newtonsoft.Json.xml" size="523221">
@@ -500,16 +488,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>aQ3CQWHm6a6SlLjtSzYko0O9BII=</dsig:DigestValue>
+      <dsig:DigestValue>f3noBkM/5VuYlrPa/9WYGRah2KA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="NLog.xml" size="1244001">
+  <file name="NLog.xml" size="1251535">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>1TtrqOC+QNY3/apBg48n0cYMmZc=</dsig:DigestValue>
+      <dsig:DigestValue>Clf/5EQ7AWx7mIiMNTBVKUbRQUI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="office.xml" size="1101623">
@@ -521,31 +509,31 @@
       <dsig:DigestValue>d07qJ5VoP+XWzzj9ejpto+lw+k8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Rosette.dll.config" size="9394">
+  <file name="Rosette.dll.config" size="9470">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>XvAR3uOGRSDAHkY7gE+xkIjWNyA=</dsig:DigestValue>
+      <dsig:DigestValue>/hv+DKZpDuB3ujhpmrHYIF/nMWo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Rosette.pdb" size="349696">
+  <file name="Rosette.pdb" size="380416">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Ei8/1vSZQo96WTFuEXLCGuoUhwM=</dsig:DigestValue>
+      <dsig:DigestValue>j93m8hWeRewOQbzMp3v/D2KShUI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="System.Net.Http.Formatting.xml" size="192626">
+  <file name="System.Net.Http.Formatting.xml" size="137872">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>PPzaBefOwZPCxI8YX4riYWFKDqc=</dsig:DigestValue>
+      <dsig:DigestValue>T1jvR+A9xp2wafy2pe9M3uySHSU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="System.Web.Http.xml" size="379561">
@@ -557,4 +545,4 @@
       <dsig:DigestValue>4xH/zsBMZHkTUAiWxrEy/sR3/Hs=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=Basis Technology Corp., O=Basis Technology Corp., L=Cambridge, S=Massachusetts, C=US" issuerKeyHash="cf99a9ea7b26f44bc98e8fd7f00526efe3d2a79d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2RTwZcLhlR17kiGRQYAGptbdNSg=</DigestValue></Reference></SignedInfo><SignatureValue>Le72ufJHFzF3Ovi41Bm49rHjiXsoooGgN8Cy2bNwg5xmlLhCJ5VTofMRM9YTDtuRR87j/q6W6ElyXnUNTZv5RFSAB4jw4dnLy5l+1smsvmXBvJ8QOsK7wYkEjePEGDlK9kzBxep5PToYzpmcJyE0QnSTR/YE+5rZ0sqrbwtze8l4i+Yr7sW40nXDLV4iDqvK0TK5E0DA7RdaC0mUhB7feHYUYTuawc/mbF+gC4zyJf579ppW77ZMrhJ6NOQKzeoCTPhAPj3Nqx6pdZ1y+R40SUtPjcz4MW/0QGpmSlBM0ttzwuZmAt6HeP1DFLHJH73kDHGkZTYJDp+7jm2fb0dDfA==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>t/COcPbRQ5SBYOcAEZfx7ndRyPnBsO1bMjm9FG2IuAGkmmpyJXBLn2HvL+mhlTaD8F+7jk5eKsIPnVouQlsLvfKxEFsRPQ21A5XcOjHt+aWkoThhCxfBoz1vKNkbqvUFFTxGM2c/qDmcSvirvLG6WcMfCsFiQWyxwo3GneE27OIsmjM3wJGMIKytwMThietEG11m0Oqa4oWW5ZYmDID/aWoZDb+vSKRT3JzF1qlgHCHbxcfZCmMBPjVj4Xs5YWmxVtQkbLYCxfH9Yr54y69yrHovyH4Mjs0ZxkWzp4LhqFRdtLBF96prZ2wx0sloOjewIAgoA97VDjbf+QcY/91H2w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2835ddd6a60680419121927b1d95e1c265f014d9" Description="" Url=""><as:assemblyIdentity name="Rosette" version="1.0.0.2" publicKeyToken="b5a33f62fd990aef" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Basis Technology Corp., O=Basis Technology Corp., L=Cambridge, S=Massachusetts, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>p/2e4b+KEs+1zEZlq60iWgoDdxw=</DigestValue></Reference></SignedInfo><SignatureValue>QFve9DYVY9LR5lEi3ZKkYkFD7HIfQSYuHtK0r90Uxxpk9XOBogSNlxXp2IN3clnjlEbbuzIYGzPOAbhI9E2D/DdrUuyULhJ+Sm06D+tsVgJPX8QcJbmwN1hEz23tLK87rf3mmh8hJKi5ggVZZ8dVhlST3gHWEaN/JF4QfajwSji+PIKhTEJo1CNmu5pBK1fL4F4Z/CP/9hYRgrwhkoo91bYUZCKQKM+xtXCjHi/QKWo44yKmpBNiP8sSQj607ELwiek/ks/1/Tz5+JP2rqf+aaLw+yXPgQ47K8U+1wTGcrm57EQaTgynhHiJQXkdKTOI5PCqIVFYhwbEV0c1DBXQkA==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>t/COcPbRQ5SBYOcAEZfx7ndRyPnBsO1bMjm9FG2IuAGkmmpyJXBLn2HvL+mhlTaD8F+7jk5eKsIPnVouQlsLvfKxEFsRPQ21A5XcOjHt+aWkoThhCxfBoz1vKNkbqvUFFTxGM2c/qDmcSvirvLG6WcMfCsFiQWyxwo3GneE27OIsmjM3wJGMIKytwMThietEG11m0Oqa4oWW5ZYmDID/aWoZDb+vSKRT3JzF1qlgHCHbxcfZCmMBPjVj4Xs5YWmxVtQkbLYCxfH9Yr54y69yrHovyH4Mjs0ZxkWzp4LhqFRdtLBF96prZ2wx0sloOjewIAgoA97VDjbf+QcY/91H2w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFRzCCBC+gAwIBAgIQG7HxUYyKDMmdugwN3t8wmDANBgkqhkiG9w0BAQUFADCBtDELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTswOQYDVQQLEzJUZXJtcyBvZiB1c2UgYXQgaHR0cHM6Ly93d3cudmVyaXNpZ24uY29tL3JwYSAoYykxMDEuMCwGA1UEAxMlVmVyaVNpZ24gQ2xhc3MgMyBDb2RlIFNpZ25pbmcgMjAxMCBDQTAeFw0xNDA3MTYwMDAwMDBaFw0xNzA3MTUyMzU5NTlaMHsxCzAJBgNVBAYTAlVTMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMRIwEAYDVQQHEwlDYW1icmlkZ2UxHzAdBgNVBAoUFkJhc2lzIFRlY2hub2xvZ3kgQ29ycC4xHzAdBgNVBAMUFkJhc2lzIFRlY2hub2xvZ3kgQ29ycC4wggEgMAsGCSqGSIb3DQEBAQOCAQ8AMIIBCgKCAQEAt/COcPbRQ5SBYOcAEZfx7ndRyPnBsO1bMjm9FG2IuAGkmmpyJXBLn2HvL+mhlTaD8F+7jk5eKsIPnVouQlsLvfKxEFsRPQ21A5XcOjHt+aWkoThhCxfBoz1vKNkbqvUFFTxGM2c/qDmcSvirvLG6WcMfCsFiQWyxwo3GneE27OIsmjM3wJGMIKytwMThietEG11m0Oqa4oWW5ZYmDID/aWoZDb+vSKRT3JzF1qlgHCHbxcfZCmMBPjVj4Xs5YWmxVtQkbLYCxfH9Yr54y69yrHovyH4Mjs0ZxkWzp4LhqFRdtLBF96prZ2wx0sloOjewIAgoA97VDjbf+QcY/91H2wIDAQABo4IBjTCCAYkwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCB4AwKwYDVR0fBCQwIjAgoB6gHIYaaHR0cDovL3NmLnN5bWNiLmNvbS9zZi5jcmwwZgYDVR0gBF8wXTBbBgtghkgBhvhFAQcXAzBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZFhdodHRwczovL2Quc3ltY2IuY29tL3JwYTATBgNVHSUEDDAKBggrBgEFBQcDAzBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9zZi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9zZi5zeW1jYi5jb20vc2YuY3J0MB8GA1UdIwQYMBaAFM+Zqep7JvRLyY6P1/AFJu/j0qedMB0GA1UdDgQWBBTmg3k6clOEnX8okOxwC8nxhKBD4zARBglghkgBhvhCAQEEBAMCBBAwFgYKKwYBBAGCNwIBGwQIMAYBAQABAf8wDQYJKoZIhvcNAQEFBQADggEBAFiuYu4FJOSB0YVgpx/KwtMbPjIODsfXLvF1bgzOpU6oVfW0xU8hnJVBD+l5+PVCI6lXzo4a+L3dVM1u2+DaDd8m26WajdlWhIVqkdlFoH8qThb76Fu8iOiSWjzsPlryqKGNJu2Ra7Ti76yl3ahdCnVSYlChVcEJi1jFyiBCuhyQprKSLuBGb+d4EJ79xbPV/PQ/ZDpgMqE+VIbsfXFyOuhMgWo3QV5VVir3SURf8cqs2WHhXlkRGkk6LJQ3XtVTod5J49IPZ8dUOyUDMKTST3pUguC87uF2EWYMQSt33tzGVVFDNvf8fiB+f9Nv7cYd9rZxleycuKb3LDu8/znYcXI=</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=Basis Technology Corp., O=Basis Technology Corp., L=Cambridge, S=Massachusetts, C=US" issuerKeyHash="cf99a9ea7b26f44bc98e8fd7f00526efe3d2a79d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>vlJuFQK2ElgzGumdgF6LPPnlGdM=</DigestValue></Reference></SignedInfo><SignatureValue>GSndCz8jmkpwKdSVuZ3BnaSmyFRN1cpNwH5uyrRR6a53a1rJB1EDlVbga36kWJ1+RXN+Ro9I443/Zl/naPG3L6QGuTs7Px5TcTYWfK8btNtcf7GXwFilLevhlU+AhhjNPEFqNZBAk/0OBK1sWM6kkkdysor7W0guYkOmey1T3BJjxEMgM5BGAAgnade9/9faymXDWNUN6HD0CHOD1TZV04cOKAQOTlXBru6h5MyLPW8N7vMxhk+GsicVmVF5ScVRc7vIa5LSVEW30F51xBME3azZx6bYiN04jv4IoMX0SBlLBqRwGti5LFCzzpCnOsALr5pmbZOUmqXIj6xixWxAAA==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>t/COcPbRQ5SBYOcAEZfx7ndRyPnBsO1bMjm9FG2IuAGkmmpyJXBLn2HvL+mhlTaD8F+7jk5eKsIPnVouQlsLvfKxEFsRPQ21A5XcOjHt+aWkoThhCxfBoz1vKNkbqvUFFTxGM2c/qDmcSvirvLG6WcMfCsFiQWyxwo3GneE27OIsmjM3wJGMIKytwMThietEG11m0Oqa4oWW5ZYmDID/aWoZDb+vSKRT3JzF1qlgHCHbxcfZCmMBPjVj4Xs5YWmxVtQkbLYCxfH9Yr54y69yrHovyH4Mjs0ZxkWzp4LhqFRdtLBF96prZ2wx0sloOjewIAgoA97VDjbf+QcY/91H2w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d319e5f93c8b5e809de91a335812b602156e52be" Description="" Url=""><as:assemblyIdentity name="Rosette" version="1.0.0.2" publicKeyToken="b5a33f62fd990aef" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Basis Technology Corp., O=Basis Technology Corp., L=Cambridge, S=Massachusetts, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>1X+i2misMH9kfaE7gJYjsCCywHA=</DigestValue></Reference></SignedInfo><SignatureValue>d7mM5PtY12j100o9lOiztiF0peH3t2wjZIKI/DndAtYayHAEbVbNus//VtoWVPzYQmevugH4V0N1RNW5l7dUI2bGBZHx2BLe/VUs/gZsvRpQ/y1kXdUcYfUhYFs5zPGB14xGe3WqT23ZobilxW8Q9/pMakUh8vMMTtQ+kXY7fln7U6TTMpaNkcOXIrjTmqzY809UxPkwCjIz7VJTdo8T9nFX9ObzI0d1lEuOA7NZaPXxJ2Z8qC6KNNGT0SJ0bb/+HdZVEWx8xBAC78NA2pCI9K3+T2pWpmummaHnevY3sI88ITMpHC2ztitENDWT3T8E5nFzcvsmHNuxH/8PrylYTQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>t/COcPbRQ5SBYOcAEZfx7ndRyPnBsO1bMjm9FG2IuAGkmmpyJXBLn2HvL+mhlTaD8F+7jk5eKsIPnVouQlsLvfKxEFsRPQ21A5XcOjHt+aWkoThhCxfBoz1vKNkbqvUFFTxGM2c/qDmcSvirvLG6WcMfCsFiQWyxwo3GneE27OIsmjM3wJGMIKytwMThietEG11m0Oqa4oWW5ZYmDID/aWoZDb+vSKRT3JzF1qlgHCHbxcfZCmMBPjVj4Xs5YWmxVtQkbLYCxfH9Yr54y69yrHovyH4Mjs0ZxkWzp4LhqFRdtLBF96prZ2wx0sloOjewIAgoA97VDjbf+QcY/91H2w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFRzCCBC+gAwIBAgIQG7HxUYyKDMmdugwN3t8wmDANBgkqhkiG9w0BAQUFADCBtDELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTswOQYDVQQLEzJUZXJtcyBvZiB1c2UgYXQgaHR0cHM6Ly93d3cudmVyaXNpZ24uY29tL3JwYSAoYykxMDEuMCwGA1UEAxMlVmVyaVNpZ24gQ2xhc3MgMyBDb2RlIFNpZ25pbmcgMjAxMCBDQTAeFw0xNDA3MTYwMDAwMDBaFw0xNzA3MTUyMzU5NTlaMHsxCzAJBgNVBAYTAlVTMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMRIwEAYDVQQHEwlDYW1icmlkZ2UxHzAdBgNVBAoUFkJhc2lzIFRlY2hub2xvZ3kgQ29ycC4xHzAdBgNVBAMUFkJhc2lzIFRlY2hub2xvZ3kgQ29ycC4wggEgMAsGCSqGSIb3DQEBAQOCAQ8AMIIBCgKCAQEAt/COcPbRQ5SBYOcAEZfx7ndRyPnBsO1bMjm9FG2IuAGkmmpyJXBLn2HvL+mhlTaD8F+7jk5eKsIPnVouQlsLvfKxEFsRPQ21A5XcOjHt+aWkoThhCxfBoz1vKNkbqvUFFTxGM2c/qDmcSvirvLG6WcMfCsFiQWyxwo3GneE27OIsmjM3wJGMIKytwMThietEG11m0Oqa4oWW5ZYmDID/aWoZDb+vSKRT3JzF1qlgHCHbxcfZCmMBPjVj4Xs5YWmxVtQkbLYCxfH9Yr54y69yrHovyH4Mjs0ZxkWzp4LhqFRdtLBF96prZ2wx0sloOjewIAgoA97VDjbf+QcY/91H2wIDAQABo4IBjTCCAYkwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCB4AwKwYDVR0fBCQwIjAgoB6gHIYaaHR0cDovL3NmLnN5bWNiLmNvbS9zZi5jcmwwZgYDVR0gBF8wXTBbBgtghkgBhvhFAQcXAzBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZFhdodHRwczovL2Quc3ltY2IuY29tL3JwYTATBgNVHSUEDDAKBggrBgEFBQcDAzBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9zZi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9zZi5zeW1jYi5jb20vc2YuY3J0MB8GA1UdIwQYMBaAFM+Zqep7JvRLyY6P1/AFJu/j0qedMB0GA1UdDgQWBBTmg3k6clOEnX8okOxwC8nxhKBD4zARBglghkgBhvhCAQEEBAMCBBAwFgYKKwYBBAGCNwIBGwQIMAYBAQABAf8wDQYJKoZIhvcNAQEFBQADggEBAFiuYu4FJOSB0YVgpx/KwtMbPjIODsfXLvF1bgzOpU6oVfW0xU8hnJVBD+l5+PVCI6lXzo4a+L3dVM1u2+DaDd8m26WajdlWhIVqkdlFoH8qThb76Fu8iOiSWjzsPlryqKGNJu2Ra7Ti76yl3ahdCnVSYlChVcEJi1jFyiBCuhyQprKSLuBGb+d4EJ79xbPV/PQ/ZDpgMqE+VIbsfXFyOuhMgWo3QV5VVir3SURf8cqs2WHhXlkRGkk6LJQ3XtVTod5J49IPZ8dUOyUDMKTST3pUguC87uF2EWYMQSt33tzGVVFDNvf8fiB+f9Nv7cYd9rZxleycuKb3LDu8/znYcXI=</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
