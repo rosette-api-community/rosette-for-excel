@@ -5,6 +5,7 @@ The Rosette API functions that are available as Excel formulas in the "Formulas"
 * [Categorize](https://developer.rosette.com/features-and-functions#categorization)
 * [Match Names](https://developer.rosette.com/features-and-functions#name-similarity)
 * [Analyze Sentiment](https://developer.rosette.com/features-and-functions#sentiment-analysis)
+
 # Using the Ribbon
 The ribbon provides the capability for customization of the API result. The output is written to a new sheet and provides one-to-many cell support. The ribbon provides all the same functionality of the formulas and is configurable through ribbon buttons and the setting dialog. Endpoints can be enabled/disabled by clicking their icon. 
 ##Document Functions
