@@ -4,6 +4,7 @@ Rosette for Excel is a product developed by [Basis Technology Corp.](basistech.c
 Rosette for Excel is currently for Windows OS only. The current "alpha" release has been tested in Office 2010, 2013, 2016 on Windows 7 & 10, with broader support on its way for the upcoming official GA release.
 To install 
 - click on the [release tab](https://github.com/rosette-api-community/rosette-for-excel/releases)
+- click on the release (preferably the most recent)
 - click on the RosetteForExcel.msi to download
 - on your machine, double click on the msi to install. The installation is a "per user" install, so no elevated permissions should be required.
 #Getting Started
