@@ -1,5 +1,5 @@
 # Rosette for Excel
-Rosette for Excel brings the power and functionality of Basis Technology’s Rosette API into Microsoft Excel. The plugin allows you to analyze text held in Excel sheets via both formulas and ribbon functions.
+Rosette for Excel brings the power and functionality of Basis Technology’s [Rosette API](https://developer.rosette.com) into Microsoft Excel. The plugin allows you to analyze text held in Excel sheets via both formulas and ribbon functions.
 
 # Using Formulas
 Together with the Rosette API, Excel formulas enable you to create complex function chains and highly customized output. Every time you update a linked cell, the Rosette API will recalculate your function results accordingly.*
