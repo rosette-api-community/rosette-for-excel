@@ -4,7 +4,7 @@ Rosette for Excel brings the power and functionality of Basis Technology’s [Ro
 # Using Formulas
 Together with the Rosette API, Excel formulas enable you to create complex function chains and highly customized output. Every time you update a linked cell, the Rosette API will recalculate your function results accordingly.*
 
-The Rosette API functions available as in Excel's "Formulas" tab are (click through for our interactive documentation and complete language coverage or scroll down for more information):
+The Rosette API functions available through Excel's "Formulas" tab are (click through for our interactive documentation and complete language coverage or scroll down for more information):
 * [Sentiment](https://developer.rosette.com/features-and-functions#sentiment-analysis)
 * [Categorization](https://developer.rosette.com/features-and-functions#categorization)
 * [Name Translation](https://developer.rosette.com/features-and-functions#name-translation) 
