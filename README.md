@@ -1,11 +1,16 @@
 # About Rosette for Excel (Beta)
 Rosette for Excel is a plugin that makes the features of the [Rosette API](https://developer.rosette.com/) available to Excel users code-free. The Rosette API provides text analytics, natural language, and names processing tools for a variety of use cases and is developed by [Basis Technology Corp.](http://www.basistech.com/)
-# How to Install  
+# Known System Requirements
+- .NET 4.0 or greater.  To check your available versions:
+    - Open a command window
+    - Type in ```dir %windir%\Microsoft.NET\Framework /AD```
+    - If necessary, install from [Microsoft .NET Framework 4.5.2](https://www.microsoft.com/en-us/download/details.aspx?id=42642)
+# How to Install
 Currently, Rosette for Excel is only compatible with Windows OS. The beta release has been tested in Office 2010, 2013, 2016 on Windows 7 & 10, with broader support on its way for the upcoming official GA release.
-To install: 
-- Click the [releases](https://github.com/rosette-api-community/rosette-for-excel/releases) tab in the Rosette for Excel repository 
-- Click the link to the latest release 
-- Under "Downloads" click RosetteForExcel.msi 
+To install:
+- Click the [releases](https://github.com/rosette-api-community/rosette-for-excel/releases) tab in the Rosette for Excel repository
+- Click the link to the latest release
+- Under "Downloads" click RosetteForExcel.msi
 - Once the .msi file has downloaded, double click to install. The installation is "per user", so no elevated permissions should be required.
 
 #Getting Started
