@@ -8,7 +8,7 @@ Rosette for Excel is currently available for Windows OS only. The present beta r
 
 Under **Downloads** click **RosetteForExcel.msi** 
 
-! Image 1
+![Figure 1](/<screenshots>/Image1.png?raw=true)
 
 Once the .msi file downloads onto your machine, double-click to install. The installation is "per user” so no elevated permissions should be required.
 
