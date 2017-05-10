@@ -42,12 +42,12 @@ In the first cell where I’d like to have a translation, I select **Translate N
 
 A few important things to know about the parameters: 
 1. `Name`: The cell that contains the name you’re trying to translate. If your name is part of a larger string of words, you’ll need to use the entity extraction ribbon function to pull out the names individually first, or your results won’t be accurate (see the second half of this guide).
-2. `TargetLanguage`: The language you’d like to translate the name to. Use the three-letter ISO code, which can be found in our [features and functions guide](https://developer.rosette.com/features-and-functions)).
+2. `TargetLanguage`: The language you’d like to translate the name to. Use the three-letter ISO code, which can be found in our [features and functions guide](https://developer.rosette.com/features-and-functions).
 3. `EntityType`: If you know the type of name (`PERSON`, `LOCATION`, or `ORGANIZATION`) you’re translating, specify it here. If you’re not sure, Rosette will make its best guess. Note, this parameter only accepts `PERSON`, `LOCATION`, or `ORGANIZATION` as input.
 4. `SourceLanguageOfUse`: If you know the language the name is written in (in this case Japanese), specify it here using the three-letter ISO code. Again, if you’re not sure, Rosette will run its own identification algorithm. 
 5. `SourceScript`: If known, the script the name to be translated is written in. I left this one blank, because I could see that two different scripts were present in the list (Kana and Kanji). Check out the [features and functions guide](https://developer.rosette.com/features-and-functions) for the appropriate script abbreviations.
 6. SourceLanguageOfOrigin: The three-letter ISO code for the language a name originated in. This is especially helpful for names that have already been transliterated from their original language/script. If the name to be translated was “Vladimir Nabokov” you could input `rus` for “Russian”. 
-7. TargetScript: The script you’d like the translation written in (again using the four-letter script abbreviation). For example, when translating from English to Korean, you can specify whether you’d like the script written in Hangul (hang) or Hanja (hani). 
+7. TargetScript: The script you’d like the translation written in (again using the four-letter script abbreviation). For example, when translating from English to Korean, you can specify whether you’d like the script written in Hangul (`hang`) or Hanja (`hani`). 
 8. TargetScheme: If you’re transliterating names, set your target scheme here using the transliteration scheme abbreviation (for most users this should be left blank).
 
 Note: Parameters can also be set using cell data. If you regularly process lists of names in different languages, it would be easy to create a template with all the necessary parameter information built in!
