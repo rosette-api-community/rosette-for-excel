@@ -8,37 +8,37 @@ Rosette for Excel is currently available for Windows OS only. The present beta r
 
 Under **Downloads** click **RosetteForExcel.msi** 
 
-![](rosette-for-excel/Image1.png?raw=true)
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image1.png)
 
 Once the .msi file downloads onto your machine, double-click to install. The installation is "per user” so no elevated permissions should be required.
 
 Open Excel. You should see a new tab called **ROSETTE**, as well as a Rosette icon and menu in the **Formulas** tab:
 
-! Image 2
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image2.png)
 
 ## Getting Started
 Before you can actually start using the plug-in, you’ll need an active Rosette API key. If you already have a Rosette developer account, you can enter your information using the dialog found in the **ROSETTE** tab.
 
-! Image 3
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image3.png)
 
 If you don’t already have a Rosette account, click the **Sign Up** button or head to developer.rosette.com to get your free Rosette API key (no credit card required). 
 
-! Image 4
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image4.png)
 
 Once you’ve completed the signup and activation process, enter your key in the **API Key** dialog in the **ROSETTE** tab. Click the **Check Key** button to make sure your connection is working. If a green check appears, you’re good to go! 
 
-! Image 5
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image5.png)
 
 ## Translating Names
 The Rosette for Excel plugin supports a wide range of features using formulas and ribbon functions. In this guide we’ll look at both applied to a quick name translation use-case.
 ### Technique 1: Formulas
 Say I have a list of Japanese names written in Kana and Kanji characters that I would like to translate into English. In this case they happen to be Japanese baseball players. Perhaps I work in baseball recruiting and I’ve found a list of the top-mentioned Japanese baseball players on social media. I’d like to know the players’ names in English. In my Excel sheet I’ve made two new columns to hold the English translations of the players’ first and last names (though Rosette also supports combined first/last name translations as well as locations and organizations).
 
-! Image 6
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image6.png)
 
 In the first cell where I’d like to have a translation, I select **Translate Names** from the Rosette drop down menu in the **Formulas** tab. A dialog box appears with several options, or parameters.
 
-! Image 7
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image7.png)
 
 A few important things to know about the parameters: 
 1. `Name`: The cell that contains the name you’re trying to translate. If your name is part of a larger string of words, you’ll need to use the entity extraction ribbon function to pull out the names individually first, or your results won’t be accurate (see the second half of this guide).
@@ -54,36 +54,36 @@ Note: Parameters can also be set using cell data. If you regularly process lists
 
 Once you’ve set the appropriate parameters, click **OK**, and the translated name will appear in the selected cell. If you get a `#VALUE!` error, check your language codes and script abbreviations. 
 
-! Image 8
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image8.png)
 
 If you’d like to apply the same settings to a whole list of names, select the cell with the formula and drag down, just as you would with a mathematical Excel formula. The translated names will appear in the cells as you go.
 
-! Image 9
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image9.png)
 
 ### Technique 2: Ribbon Functions
 Say instead of having a list of names, I have an Excel sheet populated with sentences (think newspaper headlines or short biographies) about Japanese baseball players. I want to know which players are being discussed, but in order to translate their names I first need to extract them. 
 
 In my sheet, I select the cells that contain the relevant text. In the **ROSETTE** tab I click the **Extract Entities** icon in the ribbon and hit the **Go** button. A status bar will appear on the right hand side to show Rosette’s progress. When it finishes, you’ll see an option to open your results, which will appear in a new sheet. 
 
-! Image 10
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image10.png)
 
 In the results sheet I can see the extracted entities and their type. In this case let’s say I’m interested in the locations and organizations mentioned in the text in addition to the names. 
 
 First, I’ll  sort the sheet by “Entity Type.” 
 
-! Image 11
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image11.png)
 
 Then, I’ll feed the `PERSON`, `LOCATION`, and `ORGANIZATION` entities into the **Translate Names** function. 
 
-! Image 12
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image12.png)
 
 Again, I’ll see my results in a new sheet.
 
-! Image 13
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image13.png)
 
 If I wanted, I could copy and paste the column of translated names back over to my extracted entities sheet, which would also link me back to my original sentences. I could also use a formula instead of a ribbon function to produce the same effect. Below, I’ve added a column to my extracted entities sheet, and run the **Translate Names** formula on the extracted entities.
 
-! Image 14
+![](https://github.com/rosette-api-community/rosette-for-excel/blob/screenshots/Image14.png)
 
 Baseball players aren’t the only names you might want to translate. If your business operates in multiple countries, with sales representatives using different languages and scripts to track leads and opportunities, imagine running this process on your SalesForce records. You could also use Rosette to analyze reviews or comments submitted by visitors to your website from around the world. 
 ## Next Steps
